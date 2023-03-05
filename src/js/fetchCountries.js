@@ -1,6 +1,5 @@
 const BASE_URL = `https://restcountries.com/v2`;
-const FILTER_RESPONSE = `?fields=name, capital,
-population, flags, languages`;
+const FILTER_RESPONSE = `all?fields=name, capital, population, flags, languages`;
 
 const fetchCountries = searchQuery => {
 return fetch(`${BASE_URL}/name/${searchQuery}?${FILTER_RESPONSE}`)
